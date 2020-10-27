@@ -1,11 +1,14 @@
 import { Component, OnInit } from '@angular/core';
-
+import { WindowRefService } from 'src/app/services/window-ref.service';
 @Component({
-  selector: 'app-ada-pie',
-  templateUrl: './ada-pie.component.html',
-  styleUrls: ['./ada-pie.component.scss']
+  selector: 'app-pii-ada-chart',
+  templateUrl: './pii-ada-chart.component.html',
+  styleUrls: ['./pii-ada-chart.component.scss']
 })
-export class AdaPieComponent implements OnInit {
+export class PiiAdaChartComponent implements OnInit {
+
+  constructor(private winRef: WindowRefService) { }
+
   colors = {
     domain: [
       '#003f5c',
@@ -26,7 +29,7 @@ export class AdaPieComponent implements OnInit {
   showLegend: boolean = true;
   showLabels: boolean = true;
   isDoughnut: boolean = false;
-  legendPosition: string = 'below';
+  legendPosition: string = 'bottom';
 
 
   piiPie = [
@@ -71,7 +74,6 @@ export class AdaPieComponent implements OnInit {
       value: 0
     }
   ];
-  constructor() { }
 
   ngOnInit(): void {
   }

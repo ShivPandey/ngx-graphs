@@ -24,6 +24,7 @@
     "@popperjs/core": "^2.5.3",
     "@swimlane/ngx-charts": "^16.0.0",
     "bootstrap": "^5.0.0-alpha2",
+    "canvasjs": "^1.8.3",
     "rxjs": "~6.6.3",
     "tslib": "^2.0.0",
     "zone.js": "~0.10.3"

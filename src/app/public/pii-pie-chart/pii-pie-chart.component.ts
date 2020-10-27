@@ -1,11 +1,13 @@
 import { Component, OnInit } from '@angular/core';
-
+import { WindowRefService } from 'src/app/services/window-ref.service';
 @Component({
-  selector: 'app-pii-pie',
-  templateUrl: './pii-pie.component.html',
-  styleUrls: ['./pii-pie.component.scss']
+  selector: 'app-pii-pie-chart',
+  templateUrl: './pii-pie-chart.component.html',
+  styleUrls: ['./pii-pie-chart.component.scss']
 })
-export class PiiPieComponent implements OnInit {
+export class PiiPieChartComponent implements OnInit {
+
+  constructor(private winRef: WindowRefService) { }
   colors = {
     domain: [
       '#003f5c',
@@ -26,52 +28,51 @@ export class PiiPieComponent implements OnInit {
   showLegend: boolean = true;
   showLabels: boolean = true;
   isDoughnut: boolean = false;
-  legendPosition: string = 'below';
+  legendPosition: string = 'bottom';
 
 
   piiPie = [
     {
       name: 'C1',
-      value: 14
+      value: 4
     },
     {
       name: 'C2',
-      value: 2
-    },
-    {
-      name: 'C3',
-      value: 23
-    },
-    {
-      name: 'C4',
-      value: 5
-    },
-    {
-      name: 'C5',
-      value: 9
-    },
-    {
-      name: 'C6',
-      value: 0
-    },
-    {
-      name: 'C7',
-      value: 7
-    },
-    {
-      name: 'C8',
       value: 20
     },
     {
+      name: 'C3',
+      value: 25
+    },
+    {
+      name: 'C4',
+      value: 13
+    },
+    {
+      name: 'C5',
+      value: 19
+    },
+    {
+      name: 'C6',
+      value: 5
+    },
+    {
+      name: 'C7',
+      value: 20
+    },
+    {
+      name: 'C8',
+      value: 4
+    },
+    {
       name: 'C9',
-      value: 1
+      value: 8
     },
     {
       name: 'C10',
-      value: 1
+      value: 0
     }
   ];
-  constructor() { }
 
   ngOnInit(): void {
   }
