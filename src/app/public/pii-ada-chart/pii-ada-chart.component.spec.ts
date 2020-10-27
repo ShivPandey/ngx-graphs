@@ -1,20 +1,20 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { BarChartComponent } from './bar-chart.component';
+import { PiiAdaChartComponent } from './pii-ada-chart.component';
 
-describe('BarChartComponent', () => {
-  let component: BarChartComponent;
-  let fixture: ComponentFixture<BarChartComponent>;
+describe('PiiAdaChartComponent', () => {
+  let component: PiiAdaChartComponent;
+  let fixture: ComponentFixture<PiiAdaChartComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ BarChartComponent ]
+      declarations: [ PiiAdaChartComponent ]
     })
     .compileComponents();
   });
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(BarChartComponent);
+    fixture = TestBed.createComponent(PiiAdaChartComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

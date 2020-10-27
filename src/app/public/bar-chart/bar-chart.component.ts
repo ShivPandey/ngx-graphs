@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-
+import { WindowRefService } from 'src/app/services/window-ref.service';
 @Component({
   selector: 'app-bar-chart',
   templateUrl: './bar-chart.component.html',
@@ -24,143 +24,75 @@ export class BarChartComponent implements OnInit {
   gradient: false;
   showLegend = true;
   showXAxisLabel = true;
-  xAxisLabel = 'Sensitive Data';
+  xAxisLabel = 'Categories';
   showYAxisLabel = true;
   yAxisLabel = 'Value';
   legendTitle = 'Sensitive Data';
 
-  graphData = [
+  graphSensitiveData = [
     {
-      name: 'C1',
+      name: 'Sensitive',
       series: [
         {
-          name: 'PII',
+          name: 'C1',
+          value: 5
+        },
+        {
+          name: 'C2',
           value: 14
         },
         {
-          name: 'ADA',
+          name: 'C3',
+          value: 7
+        },
+        {
+          name: 'C4',
+          value: 10
+        },
+        {
+          name: 'C5',
           value: 4
-        }
-      ]
-    },
-    {
-      name: 'C2',
-      series: [
-        {
-          name: 'PII',
-          value: 2
         },
         {
-          name: 'ADA',
-          value: 20
-        }
-      ]
-    },
-    {
-      name: 'C3',
-      series: [
-        {
-          name: 'PII',
-          value: 23
-        },
-        {
-          name: 'ADA',
+          name: 'C6',
           value: 25
         }
       ]
     },
-    {
-      name: 'C4',
-      series: [
-        {
-          name: 'PII',
-          value: 5
-        },
-        {
-          name: 'ADA',
-          value: 13
-        }
-      ]
-    },
-    {
-      name: 'C5',
-      series: [
-        {
-          name: 'PII',
-          value: 9
-        },
-        {
-          name: 'ADA',
-          value: 19
-        }
-      ]
-    },
-    {
-      name: 'C6',
-      series: [
-        {
-          name: 'PII',
-          value: 0
-        },
-        {
-          name: 'ADA',
-          value: 5
-        }
-      ]
-    },
-    {
-      name: 'C7',
-      series: [
-        {
-          name: 'PII',
-          value: 7
-        },
-        {
-          name: 'ADA',
-          value: 20
-        }
-      ]
-    },
-    {
-      name: 'C8',
-      series: [
-        {
-          name: 'PII',
-          value: 20
-        },
-        {
-          name: 'ADA',
-          value: 4
-        }
-      ]
-    },
-    {
-      name: 'C9',
-      series: [
-        {
-          name: 'PII',
-          value: 1
-        },
-        {
-          name: 'ADA',
-          value: 8
-        }
-      ]
-    },
-    {
-      name: 'C10',
-      series: [
-        {
-          name: 'PII',
-          value: 14
-        },
-        {
-          name: 'ADA',
-          value: 4
-        }
-      ]
-    }
   ];
+
+  graphNonSensitiveData = [
+    {
+      name: 'Non sensitive',
+      series: [
+        {
+          name: 'E1',
+          value: 12
+        },
+        {
+          name: 'E2',
+          value: 6
+        },
+        {
+          name: 'E3',
+          value: 3
+        },
+        {
+          name: 'E4',
+          value: 10
+        },
+        {
+          name: 'E5',
+          value: 15
+        },
+        {
+          name: 'E6',
+          value: 20
+        },
+      ]
+    },
+  ];
+
   constructor() { }
 
   ngOnInit(): void {

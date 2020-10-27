@@ -1,14 +1,23 @@
-<mat-card class="shadow rounded-lg">
-    <mat-card-header>
-        <mat-card-title class="text-primary">Data Visualization</mat-card-title>
-        <mat-card-subtitle class="text-warning">Visualize PII, ADA & None sensitive data</mat-card-subtitle>
-    </mat-card-header>
-    <mat-card-content style="height: 400px;">
-        <ngx-charts-bar-vertical-2d [view]="[1400, 400]" [scheme]="colors" [results]="graphData" [gradient]="gradient"
-            [xAxis]="showXAxis" [yAxis]="showYAxis" [legend]="showLegend" [showXAxisLabel]="showXAxisLabel"
-            [showYAxisLabel]="showYAxisLabel" [xAxisLabel]="xAxisLabel" [yAxisLabel]="yAxisLabel"
-            [legendTitle]="legendTitle">
-        </ngx-charts-bar-vertical-2d>
-
-    </mat-card-content>
-</mat-card>
+<div class="card shadow">
+    <div class="card-header bg-primary">
+        <h4 class="text-light mb-1">Data Visualization</h4>
+    </div>
+    <div class="card-body">
+        <div class="d-flex flex-row">
+            <span class="w-50">
+                <ngx-charts-bar-vertical-2d [view]="[400, 300]" [scheme]="colors" [results]="graphSensitiveData"
+                    [gradient]="gradient" [xAxis]="showXAxis" [yAxis]="showYAxis" [legend]="showLegend"
+                    [showXAxisLabel]="showXAxisLabel" [showYAxisLabel]="showYAxisLabel" [xAxisLabel]="xAxisLabel"
+                    [yAxisLabel]="yAxisLabel" [legendTitle]="legendTitle">
+                </ngx-charts-bar-vertical-2d>
+            </span>
+            <span class="w-50">
+                <ngx-charts-bar-vertical-2d [view]="[400, 300]" [scheme]="colors" [results]="graphNonSensitiveData"
+                    [gradient]="gradient" [xAxis]="showXAxis" [yAxis]="showYAxis" [legend]="showLegend"
+                    [showXAxisLabel]="showXAxisLabel" [showYAxisLabel]="showYAxisLabel" [xAxisLabel]="xAxisLabel"
+                    [yAxisLabel]="yAxisLabel" [legendTitle]="legendTitle">
+                </ngx-charts-bar-vertical-2d>
+            </span>
+        </div>
+    </div>
+</div>

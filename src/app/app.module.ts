@@ -3,14 +3,16 @@ import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { PublicComponent } from './public/public.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MaterializeModule } from 'src/app/modules/materialize.module';
+
 import { NgxChartsModule } from '@swimlane/ngx-charts';
+
+import { PublicComponent } from './public/public.component';
 import { BarChartComponent } from './public/bar-chart/bar-chart.component';
-import { PiiPieComponent } from './public/pii-pie/pii-pie.component';
-import { AdaPieComponent } from './public/ada-pie/ada-pie.component';
-import { AdvancePieComponent } from './public/advance-pie/advance-pie.component';
+import { PiiPieChartComponent } from './public/pii-pie-chart/pii-pie-chart.component';
+import { PiiAdaChartComponent } from './public/pii-ada-chart/pii-ada-chart.component';
+import { AdvancePieChartComponent } from './public/advance-pie-chart/advance-pie-chart.component';
 import { DataDialogComponent } from './public/data-dialog/data-dialog.component';
 
 @NgModule({
@@ -18,10 +20,10 @@ import { DataDialogComponent } from './public/data-dialog/data-dialog.component'
     AppComponent,
     PublicComponent,
     BarChartComponent,
-    PiiPieComponent,
-    AdaPieComponent,
-    AdvancePieComponent,
-    DataDialogComponent
+    PiiPieChartComponent,
+    PiiAdaChartComponent,
+    AdvancePieChartComponent,
+    DataDialogComponent,
   ],
   imports: [
     BrowserModule,
