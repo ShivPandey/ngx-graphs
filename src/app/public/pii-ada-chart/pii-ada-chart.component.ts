@@ -34,44 +34,40 @@ export class PiiAdaChartComponent implements OnInit {
 
   piiPie = [
     {
-      name: 'C1',
+      name: 'Digital Accessibility',
       value: 4
     },
     {
-      name: 'C2',
+      name: 'Account Opening Disclosure',
       value: 20
     },
     {
-      name: 'C3',
+      name: 'Pay App Disclosure',
       value: 25
     },
     {
-      name: 'C4',
+      name: 'Account Opening Privacy',
       value: 13
     },
     {
-      name: 'C5',
+      name: 'Identity Theft',
       value: 19
     },
     {
-      name: 'C6',
+      name: 'Equal Access to service',
       value: 5
     },
     {
-      name: 'C7',
+      name: 'Telemarketing',
       value: 20
     },
     {
-      name: 'C8',
+      name: 'Periodic Statements',
       value: 4
     },
     {
-      name: 'C9',
+      name: 'Change in Terms',
       value: 8
-    },
-    {
-      name: 'C10',
-      value: 0
     }
   ];
 

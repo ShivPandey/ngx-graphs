@@ -8,10 +8,18 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
 
 .card{
     border: 0px;
+    overflow: hidden;
 }
 
 .fab-btn{
     position: fixed;
     right: 40px;
     bottom: 40px;
+}
+
+.chart-legend .legend-wrap{
+    width: 160px !important;
+}
+.chart-legend .legend-label{
+    width: 300px !important;
 }

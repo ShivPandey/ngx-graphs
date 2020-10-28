@@ -24,71 +24,96 @@ export class BarChartComponent implements OnInit {
   gradient: false;
   showLegend = true;
   showXAxisLabel = true;
-  xAxisLabel = 'Categories';
+  xAxisLabel = '';
   showYAxisLabel = true;
-  yAxisLabel = 'Value';
-  legendTitle = 'Sensitive Data';
+  yAxisLabel = 'Cust Review Points';
+  legendTitle = 'Legend';
 
   graphSensitiveData = [
     {
-      name: 'Sensitive',
+      name: 'PII Data',
       series: [
         {
-          name: 'C1',
-          value: 5
-        },
-        {
-          name: 'C2',
+          name: 'Personnel Info',
           value: 14
         },
         {
-          name: 'C3',
+          name: 'Passport Info',
+          value: 2
+        },
+        {
+          name: 'Credit & Debit Card Number',
+          value: 23
+        },
+        {
+          name: 'Banking Accounts',
+          value: 5
+        },
+        {
+          name: 'Passwords',
+          value: 9
+        },
+        {
+          name: 'Digital Accounts & Emails',
+          value: 1
+        },
+        {
+          name: 'Biometric Info',
           value: 7
         },
         {
-          name: 'C4',
-          value: 10
+          name: 'Personal Phone Num',
+          value: 20
         },
         {
-          name: 'C5',
-          value: 4
-        },
-        {
-          name: 'C6',
-          value: 25
+          name: 'Identification Num Records',
+          value: 1
         }
+
       ]
     },
   ];
 
   graphNonSensitiveData = [
     {
-      name: 'Non sensitive',
+      name: 'ADA Data',
       series: [
         {
-          name: 'E1',
-          value: 12
+          name: 'Digital Accessibility',
+          value: 4
         },
         {
-          name: 'E2',
-          value: 6
-        },
-        {
-          name: 'E3',
-          value: 3
-        },
-        {
-          name: 'E4',
-          value: 10
-        },
-        {
-          name: 'E5',
-          value: 15
-        },
-        {
-          name: 'E6',
+          name: 'Account Opening Disclosure',
           value: 20
         },
+        {
+          name: 'Pay App Disclosure',
+          value: 25
+        },
+        {
+          name: 'Account Opening Privacy',
+          value: 13
+        },
+        {
+          name: 'Identity Theft',
+          value: 19
+        },
+        {
+          name: 'Equal Access to service',
+          value: 5
+        },
+        {
+          name: 'Telemarketing',
+          value: 20
+        },
+        {
+          name: 'Periodic Statements',
+          value: 4
+        },
+        {
+          name: 'Change in Terms',
+          value: 8
+        }
       ]
     },
   ];

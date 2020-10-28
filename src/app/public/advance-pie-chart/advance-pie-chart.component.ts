@@ -7,11 +7,10 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AdvancePieChartComponent implements OnInit {
   colors = {
-    domain: [
-      '#d45087',
-      '#f95d6a',
-      '#ff7c43',
-      '#ffa600'
+    domain: ['#F57C00',
+    '#4CAF50',
+    '#FBC02D',
+    '#ffa600', 
     ]
   };
   saleData = [

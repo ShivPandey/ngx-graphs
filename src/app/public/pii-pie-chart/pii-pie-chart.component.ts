@@ -33,44 +33,40 @@ export class PiiPieChartComponent implements OnInit {
 
   piiPie = [
     {
-      name: 'C1',
-      value: 4
+      name: 'Personnel Info',
+      value: 14
     },
     {
-      name: 'C2',
-      value: 20
+      name: 'Passport Info',
+      value: 2
     },
     {
-      name: 'C3',
-      value: 25
+      name: 'Credit & Debit Card Number',
+      value: 23
     },
     {
-      name: 'C4',
-      value: 13
-    },
-    {
-      name: 'C5',
-      value: 19
-    },
-    {
-      name: 'C6',
+      name: 'Banking Accounts',
       value: 5
     },
     {
-      name: 'C7',
+      name: 'Passwords',
+      value: 9
+    },
+    {
+      name: 'Digital Accounts & Emails',
+      value: 1
+    },
+    {
+      name: 'Biometric Info',
+      value: 7
+    },
+    {
+      name: 'Personal Phone Num',
       value: 20
     },
     {
-      name: 'C8',
-      value: 4
-    },
-    {
-      name: 'C9',
-      value: 8
-    },
-    {
-      name: 'C10',
-      value: 0
+      name: 'Identification Num Records',
+      value: 1
     }
   ];
 
